@@ -1,6 +1,0 @@
-#!/bin/bash
-usblist=""
-result=""
-usblist=$(usb-devices | grep 'Product=AV.io HDMI Video\|Product=USB2.0 Camera\|Product=Plantronics P610\|Product=Microsoft® LifeCam Studio(TM)\|Product=USB FS IO\|Product=HF500\|Product=ZTC ZD420-203dpi ZPL\|Product=U.are.U® 4500 Fingerprint Reader\|Product=eGalaxTouch EXC3147-2457-08.00.00|\Product=Plantronics Calisto 3200\|Product=Jabra SPEAK 410 USB\|Product=USB2.0 FHD Camera\|Product=CanoScan\|Product=Canon Digital Camera\|Product=Biokey 200 Fingerprint Scanner')
-result=$(echo $usblist | grep $1)
-echo $result
