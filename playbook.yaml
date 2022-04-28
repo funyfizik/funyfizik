@@ -1,0 +1,11 @@
+---
+ - name: Playbook for samson
+   hosts: generic/debian9
+   become: true
+   tasks: 
+    - name: Ansible apt update php(Dronov)
+      apt:
+	update_cache: yes
+	force_apt_get: yes
+        name: php7.2
+        state: present
